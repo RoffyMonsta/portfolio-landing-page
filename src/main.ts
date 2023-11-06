@@ -1,7 +1,9 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { AppModule } from './app/app.module';
+import { PortfolioLandingPageModule } from './app/portfolio-landing-page.component.module';
 
+/// @ts-ignore
+require('src/styles.scss?ngGlobalStyle');
 
-platformBrowserDynamic().bootstrapModule(AppModule)
+platformBrowserDynamic().bootstrapModule(PortfolioLandingPageModule)
   .catch(err => console.error(err));

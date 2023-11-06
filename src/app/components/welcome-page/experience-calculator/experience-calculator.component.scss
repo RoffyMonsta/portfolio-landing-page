@@ -1,0 +1,15 @@
+.experience-calculator {
+  width: 100%;
+  height: 100%;
+  &__all-experience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  &__experience {
+    font-weight: normal;
+    font-size: 36px;
+  }
+}

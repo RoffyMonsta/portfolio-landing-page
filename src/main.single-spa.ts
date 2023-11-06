@@ -4,15 +4,18 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { singleSpaAngular } from 'single-spa-angular';
 
-import { AppModule } from './app/app.module';
+import { PortfolioLandingPageModule } from './app/portfolio-landing-page.component.module';
 import { singleSpaPropsSubject } from './single-spa/single-spa-props';
+
+/// @ts-ignore
+require('src/styles.scss?ngGlobalStyle');
 
 const lifecycles = singleSpaAngular({
   bootstrapFunction: singleSpaProps => {
     singleSpaPropsSubject.next(singleSpaProps);
-    return platformBrowserDynamic().bootstrapModule(AppModule);
+    return platformBrowserDynamic().bootstrapModule(PortfolioLandingPageModule);
   },
-  template: '<app-root />',
+  template: '<roffymonsta-portfolio-landing-page />',
   NgZone,
 });
 
