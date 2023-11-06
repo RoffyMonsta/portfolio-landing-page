@@ -1,0 +1,29 @@
+.welcome-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  &__general-info {
+    width: 50%;
+    padding-left: 64px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lady Ice';
+    color: var(--primary-color);
+    gap: 24px;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-weight: normal;
+    font-size: 36px;
+  }
+
+  &__links {
+    width: 50%;
+  }
+}

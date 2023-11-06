@@ -38,7 +38,7 @@
               "libraryName": "portfolio-landing-page",
               "libraryTarget": "umd"
             },
-            "deployUrl": "http://localhost:NaN/"
+            "deployUrl": "http://localhost:4201/"
           },
           "configurations": {
             "production": {
