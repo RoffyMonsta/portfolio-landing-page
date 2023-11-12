@@ -1,0 +1,27 @@
+<div class="work-card">
+  <p class="work-card__date">{{cardInfo.date}}</p>
+  <div class="work-card__info">
+    <a [href]="cardInfo.companyLink" class="work-card__company" target="_blank">{{cardInfo.companyName}}</a>
+    <div class="work-card__positions">
+      <p *ngFor="let position of cardInfo.positions" class="work-card__position">{{ position.positionDate }} - {{position.positionName}}</p>
+    </div>
+    <div class="work-card__description" *ngFor="let project of cardInfo.projects">
+      <p class="work-card__project-info">
+        <span class="work-card__project-date">{{project.projectDate}} </span>
+        <a *ngIf="project.projectLink" class="work-card__project-name link" [href]="project.projectLink" target="_blank">{{project.projectName}}</a>
+        <span *ngIf="!project.projectLink" class="work-card__project-name">{{project.projectName}}</span>
+      </p>
+      <div class="work-card__project-description">
+        {{ project.projectDescription}}
+      </div>
+    </div>
+    <div class="work-card__achievements-block">
+      <p class="work-card__achievements-title">My achievements: </p>
+      <div class="work-card__achievements">
+        <ul>
+          <li *ngFor="let achievement of cardInfo.achievements">{{achievement}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

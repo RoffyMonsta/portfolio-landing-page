@@ -1,3 +1,8 @@
 <section class="section work-experience" appScrollSection="work_experience">
-  yo
+  <p class="section-title">Work Experience</p>
+    <div class="work-experience__experience">
+    <ng-container *ngFor="let card of workCards">
+      <app-work-card [cardInfo]="card"></app-work-card>
+    </ng-container>
+  </div>
 </section>

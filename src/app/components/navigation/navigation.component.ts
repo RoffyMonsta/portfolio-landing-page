@@ -13,6 +13,10 @@ export class NavigationComponent {
 
   links: ILink[] = [
     {
+      title: 'Welcome',
+      link: 'welcome'
+    },
+    {
       title: 'About me',
       link: 'about_me'
     },

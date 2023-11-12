@@ -5,8 +5,37 @@
   padding: 0 16px;
   overflow-x: hidden;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-end;
   scroll-behavior: smooth;
+  &__content {
+    width: 75%;
+  }
+  &__navigation {
+    height: 100vh;
+    width: 25%;
+    position: fixed;
+    left: 0;
+    border-right: 1px solid rgba(0,0,0,0.2)
+  }
+}
+
+app-welcome-page,
+app-about-me,
+app-work-experience,
+app-technical-skill,
+app-my-projects-demo,
+app-contact-me { width: 100%;}
+
+@media screen and (max-width: 767px) {
+  .landing-page {
+    flex-direction: column;
+    &__content {
+      width: 100%;
+    }
+    &__navigation {
+      display: none;
+    }
+  }
 }
