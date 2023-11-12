@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { assetUrl } from 'src/single-spa/asset-url';
 
 @Component({
   selector: 'app-about-me',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AboutMeComponent {
 
+  ukrainianFlagAsset = assetUrl('./../../../assets/ukrainian-flag.svg');
+  britainFlagAsset = assetUrl('./../../../assets/united-kingdom.svg');
+  germanFlagAsset = assetUrl('./../../../assets/germany-flag.svg');
+  polishFlagAsset = assetUrl('./../../../assets/poland-flag.svg');
 }
