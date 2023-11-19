@@ -11,8 +11,7 @@
   text-transform: uppercase;
   text-align: center;
   width: 100%;
-  font-family: var(--font-family);
   color: var(--primary-color);
   font-size: var(--title-font-size);
-  margin: 24px 0;
+  margin: var(--regular-gap) 0;
 }

@@ -1,0 +1,19 @@
+.footer {
+  width: 100%;
+  border-top: 1px solid var(--primary-color);
+  background-color: var(--secondary-matching-color-1);
+  color: #fff;
+  padding: 16px 0;
+  text-align: center;
+  z-index: 200;
+  position: absolute;
+  bottom: 0;
+}
+
+.container {
+  margin: 0 auto;
+  p {
+    font-weight: normal;
+    font-size: var(--small-font-size);
+  }
+}

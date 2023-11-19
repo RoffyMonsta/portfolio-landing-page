@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { assetUrl } from 'src/single-spa/asset-url';
 
 export interface ILink {
   title: string,
@@ -10,6 +11,10 @@ export interface ILink {
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
+
+  emailIconPath = assetUrl('/icons/email.svg');
+  linkedinIconPath = assetUrl('/icons/linkedin.svg');
+  githubIconPath = assetUrl('/icons/github.svg');
 
   links: ILink[] = [
     {

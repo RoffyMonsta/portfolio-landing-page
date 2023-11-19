@@ -5,12 +5,12 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  font-family: var(--font-family);
   padding: 16px;
   border: 2px solid #85AA97;
   background: var(--secondary-matching-color-1);
   border-radius: 10px;
-  font-size: var(--small-font-size);
+  gap: var(--small-gap);
+  font-size: var(--regular-font-size);
   &:hover {
     background: var(--secondary-matching-color-2);
     transition: background 1s;

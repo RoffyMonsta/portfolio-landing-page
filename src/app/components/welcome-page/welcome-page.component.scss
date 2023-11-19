@@ -4,20 +4,18 @@
   align-items: center;
   justify-content: center;
   &__general-info {
-    padding-left: 64px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: var(--font-family);
     color: var(--primary-color);
-    gap: 24px;
+    gap: var(--regular-gap);
   }
   &__description {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: var(--regular-gap);
     font-weight: normal;
     font-size: var(--regular-font-size);
   }

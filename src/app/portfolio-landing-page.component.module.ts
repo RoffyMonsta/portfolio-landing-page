@@ -14,7 +14,10 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
 import { ScrollManagerModule } from './components/navigation/scroll-manager/scroll-manager.module';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
 import { WorkCardComponent } from './components/work-experience/work-card/work-card.component';
-
+import {MatExpansionModule} from '@angular/material/expansion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDividerModule} from '@angular/material/divider';
+import { FooterComponent } from './components/footer/footer.component';
 @NgModule({
   declarations: [
     PortfolioLandingPageComponent,
@@ -27,12 +30,16 @@ import { WorkCardComponent } from './components/work-experience/work-card/work-c
     TechnicalSkillsComponent,
     MyProjectsDemoComponent,
     ContactMeComponent,
-    WorkCardComponent
+    WorkCardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     ScrollManagerModule,
-    NgxScrollTopModule
+    NgxScrollTopModule,
+    MatExpansionModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [PortfolioLandingPageComponent]

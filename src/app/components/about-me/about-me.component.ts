@@ -8,8 +8,8 @@ import { assetUrl } from 'src/single-spa/asset-url';
 })
 export class AboutMeComponent {
 
-  ukrainianFlagAsset = assetUrl('/ukrainian-flag.svg');
-  britainFlagAsset = assetUrl('./united-kingdom.svg');
-  germanFlagAsset = assetUrl('/germany-flag.svg');
-  polishFlagAsset = assetUrl('/poland-flag.svg');
+  ukrainianFlagAsset = assetUrl('/flags/ukrainian-flag.svg');
+  britainFlagAsset = assetUrl('/flags/united-kingdom.svg');
+  germanFlagAsset = assetUrl('/flags/germany-flag.svg');
+  polishFlagAsset = assetUrl('/flags/poland-flag.svg');
 }
