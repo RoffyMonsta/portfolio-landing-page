@@ -1,0 +1,40 @@
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  gap: var(--big-gap);
+  padding-bottom: 120px;
+  &__description {
+    font-weight: normal;
+    font-size: var(--regular-font-size);
+    a {
+      color: white;
+      font-weight: bold;
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--small-gap);
+  }
+  &__contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--regular-font-size);
+    color: var(--primary-color);
+    font-weight: normal;
+  }
+  &__icon {
+    width: var(--regular-font-size);
+  }
+  &__link {
+    color: white;
+  }
+}

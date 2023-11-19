@@ -1,3 +1,10 @@
 <div class="navigation">
-  <a class="navigation__link" *ngFor="let link of links" [appScrollAnchor]="link.link"> {{ link.title }}</a>
+  <div class="navigation__links">
+    <a class="navigation__link" *ngFor="let link of links" [appScrollAnchor]="link.link"> {{ link.title }}</a>
+  </div>
+  <div class="navigation__contact">
+    <a href="mailto:anton.lomovatskyi@gmail.com?subject = Hey Anton!"><img [src]="emailIconPath" alt="icon" class="navigation__icon"></a>
+    <a href="https://www.linkedin.com/in/anton-lomovatskyi-17a9661b1/" target="_blank"><img [src]="linkedinIconPath" alt="icon" class="navigation__icon"></a>
+    <a href="https://github.com/RoffyMonsta" target="_blank"><img [src]="githubIconPath" alt="icon" class="navigation__icon"></a>
+  </div>
 </div>

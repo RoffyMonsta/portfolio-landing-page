@@ -37,12 +37,12 @@
               "path": "extra-webpack.config.js",
               "libraryName": "portfolio-landing-page",
               "libraryTarget": "umd"
-            },
-            "deployUrl": "http://localhost:4201/"
+            }
           },
           "configurations": {
             "production": {
-              "outputHashing": "none"
+              "outputHashing": "none",
+              "deployUrl": "https://roffymonsta.github.io/portfolio-landing-page/"
             },
             "development": {
               "buildOptimizer": false,
@@ -51,7 +51,8 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true,
-              "outputHashing": "none"
+              "outputHashing": "none",
+              "deployUrl": "http://localhost:4201/"
             }
           },
           "defaultConfiguration": "production"

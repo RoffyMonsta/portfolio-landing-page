@@ -1,3 +1,11 @@
 <section class="section contact-me" appScrollSection="contact">
-  yo
+  <p class="section-title">Contact me</p>
+  <p class="contact-me__description">Make sure to contact me: </p>
+  <div class="contact-me__contacts">
+    <div class="contact-me__contact-container" *ngFor="let method of contactMeMethods">
+      <img [src]="method.iconPath" alt="icon" class="contact-me__icon">
+      <span class="contact-me__value">{{method.textValue}}: </span>
+      <a [href]="method.link" target="_blank" class="contact-me__link">{{method.displayValue}}</a>
+    </div>
+  </div>
 </section>
