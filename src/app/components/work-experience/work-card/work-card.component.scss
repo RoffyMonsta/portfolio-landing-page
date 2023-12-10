@@ -9,11 +9,22 @@
   border: 2px solid #85AA97;
   background: var(--secondary-matching-color-1);
   border-radius: 10px;
-  gap: var(--small-gap);
+  gap: var(--regular-gap);
   font-size: var(--regular-font-size);
   &:hover {
     background: var(--secondary-matching-color-2);
     transition: background 1s;
+  }
+  &__header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  &__header-info {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 8px;
   }
   &__date {
     width: 25%;
@@ -22,7 +33,6 @@
     color: var(--primary-matching-color-1);
   }
   &__info {
-    width: 70%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -36,9 +46,9 @@
     font-size: var(--big-font-size);
   }
   &__positions {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
     gap: 8px;
     padding-left: 16px;
   }
