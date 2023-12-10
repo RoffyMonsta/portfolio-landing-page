@@ -74,8 +74,8 @@
         font-family: var(--font-family);
       }
       ::ng-deep & .mat-expansion-indicator::after {
-        height: calc(var(--regular-font-size)/4);
-        width: calc(var(--regular-font-size)/4);
+        height: calc(var(--regular-font-size)/6);
+        width: calc(var(--regular-font-size)/6);
     }
 
       ::ng-deep & .mat-expansion-panel-body {
