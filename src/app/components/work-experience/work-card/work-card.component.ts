@@ -14,7 +14,7 @@ export interface IWorkCard {
     projectName: string;
     projectDescription: string;
   }[];
-  achievements: string[];
+  responsibilites: string[];
 }
 @Component({
   selector: 'app-work-card',

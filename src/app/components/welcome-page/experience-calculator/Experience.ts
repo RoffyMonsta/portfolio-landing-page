@@ -24,4 +24,8 @@ export const MY_EXPERIENCE: IExperience[] = [
     name: 'React',
     startDate: new Date('2023-08-26')
   },
+  {
+    name: 'Flutter',
+    startDate: new Date('2023-09-26')
+  },
 ];
