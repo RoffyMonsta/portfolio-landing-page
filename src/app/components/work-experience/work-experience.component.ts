@@ -16,11 +16,11 @@ export class WorkExperienceComponent {
       positions: [
         {
           positionDate:  'OCT 2022 - PRESENT',
-          positionName: 'Middle Full-Stack Engineer'
+          positionName: 'Software Engineer'
         },
         {
           positionDate:  'DEC 2021 - OCT 2022',
-          positionName: 'Junior Full-Stack Engineer'
+          positionName: 'Junior Software Engineer'
         }
       ],
       projects: [
@@ -28,13 +28,15 @@ export class WorkExperienceComponent {
           projectDate: 'DEC 2021 - PRESENT',
           projectLink: 'https://babyscripts.com/',
           projectName: 'Babyscripts',
-          projectDescription: "Working as an outstaff engineer in a US based team on a US based startup that provides better pregnancies for patients."
+          projectDescription: "Working within an outstaffing framework for a U.S.-based company, I played a pivotal role in the development of an innovative application designed to elevate pregnancy experiences through advanced monitoring and educational features."
         }
       ],
-      achievements: [
-        "Implemented state management in the existing system resulted in a reduction of bugs and an increase in the speed of the application",
-        "Migrated an old version of an Angular web application into a micro-frontend system with root component and shared dependencies",
-        "Configured the build of multiple mobile applications with different configurations using the same codebase"
+      responsibilites: [
+        "Executed web and mobile development tasks using Angular, React Ionic, Flutter and NodeJS to ensure a seamless user experience",
+        "Contributed to backend development, leveraging technologies such as AWS (Dynamo, S3, CloudFormation, CloudWatch), Elastic Search, and Webpack",
+        "Engaged in core development activities, implementing features that enriched the application's functionality",
+        "Demonstrated a commitment to code quality by writing unit tests and participating actively in code reviews",
+        "Led Technical Analysis and Design Documents (TADDs), Proof of Concepts (POCs), and investigative tasks to explore and implement innovative solutions",
       ]
     },
     {
@@ -44,20 +46,22 @@ export class WorkExperienceComponent {
       positions: [
         {
           positionDate:  'MAR 2021 - DEC 2021',
-          positionName: 'Junior Frontend Engineer'
+          positionName: 'Junior Software Engineer'
         }
       ],
       projects: [
         {
           projectDate: 'MAR 2021 - DEC 2021',
           projectName: 'Family Shopping',
-          projectDescription: "This project is focused on creating a great app and a website to generate shopping lists for the whole family."
+          projectDescription: "As a Trainee-Junior Frontend Developer specializing in Angular, I undertook key responsibilities and achieved notable milestones during my tenure"
         }
       ],
-      achievements: [
-        "Attended all the Scrum ceremonies and was pro-active on meetings",
-        "Created a fully functional website using Angular and NgXs to manipulate with shopping lists",
-        "Created a fully functional mobile application using Ionic and Angular"
+      responsibilites: [
+        "Collaborated with senior developers, contributing to the coding and development of web applications using Angular",
+        "Assisted in the creation of a responsive and visually appealing mobile app using Ionic, actively participating in design and implementation phases",
+        "Engaged in regular code reviews, absorbing feedback to enhance coding skills and maintain code quality",
+        "Supported the integration of UI/UX designs, ensuring seamless collaboration with design and back-end teams",
+        "Participated in team meetings, providing valuable insights and learning from experienced professionals",
       ]
     },
   ]

@@ -27,13 +27,19 @@ export class ExperienceCalculatorComponent implements OnInit {
 
   calculateTimeGap(startDate: Date) {
     const currentDate = new Date();
+
     const startYear = startDate.getFullYear();
     const startMonth = startDate.getMonth();
     const currentYear = currentDate.getFullYear();
     const currentMonth = currentDate.getMonth();
 
-    const years = currentYear - startYear;
-    const months = currentMonth - startMonth;
+    let years = currentYear - startYear;
+    let months = currentMonth - startMonth;
+
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
 
     let result = '';
 
@@ -51,7 +57,8 @@ export class ExperienceCalculatorComponent implements OnInit {
     if (result === '') {
         result = 'less than a month';
     }
+
     return result;
-  }
+}
 
 }

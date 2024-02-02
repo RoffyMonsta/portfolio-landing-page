@@ -32,33 +32,15 @@ export class MyProjectsDemoComponent implements OnInit {
 
   myprojects: IMyProject[] = [
     {
-      name: 'Test Test Test Test Test Test Test Test Test Test Test',
-      demoPath: '/asd',
-      codeURL: 'https://github.com/RoffyMonsta',
+      name: 'This landing page',
+      demoPath: '/',
+      codeURL: 'https://github.com/RoffyMonsta/portfolio-landing-page',
       technology: eProjectTechnology.ANGULAR
     },
     {
-      name: 'Test2',
-      demoPath: '/asd2',
-      codeURL: 'https://github.com/RoffyMonsta',
-      technology: eProjectTechnology.ANGULAR
-    },
-    {
-      name: 'Test3',
-      demoPath: '/asd3',
-      codeURL: 'https://github.com/RoffyMonsta',
-      technology: eProjectTechnology.REACT
-    },
-    {
-      name: 'Test4',
-      demoPath: '/asd4',
-      codeURL: 'https://github.com/RoffyMonsta',
-      technology: eProjectTechnology.FLUTTER
-    },
-    {
-      name: 'Test5',
-      demoPath: '/asd5',
-      codeURL: 'https://github.com/RoffyMonsta',
+      name: `Jojo's Bizzare Adventure Wiki-API`,
+      demoPath: 'https://jojo-api.onrender.com/api/v1/characters',
+      codeURL: 'https://github.com/RoffyMonsta/portfolio-jojo-backend-api',
       technology: eProjectTechnology.NODEJS
     },
   ];
