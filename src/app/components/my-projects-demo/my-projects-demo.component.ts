@@ -23,11 +23,11 @@ export interface IMyProject {
 export class MyProjectsDemoComponent implements OnInit {
 
   iconPath: {[key: string]: string} = {
-    [eProjectTechnology.ANGULAR]: 'assets/technologies/angular.svg',
-    [eProjectTechnology.REACT]: 'assets/technologies/react.svg',
-    [eProjectTechnology.IONIC]: 'assets/technologies/ionic.svg',
-    [eProjectTechnology.FLUTTER]: 'assets/technologies/flutter.svg',
-    [eProjectTechnology.NODEJS]: 'assets/technologies/nodejs.svg',
+    [eProjectTechnology.ANGULAR]: assetUrl('/technologies/angular.svg'),
+    [eProjectTechnology.REACT]: assetUrl('/technologies/react.svg'),
+    [eProjectTechnology.IONIC]: assetUrl('/technologies/ionic.svg'),
+    [eProjectTechnology.FLUTTER]: assetUrl('/technologies/flutter.svg'),
+    [eProjectTechnology.NODEJS]: assetUrl('/technologies/nodejs.svg'),
   };
 
   myprojects: IMyProject[] = [
