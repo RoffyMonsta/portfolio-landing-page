@@ -1,11 +1,13 @@
-<section class="section technical-skills" appScrollSection="technical_skills">
-  <p class="section-title">Technical Skills</p>
+<section class="section" appScrollSection="technical_skills">
+  <h2 class="section-title">Technical Skills</h2>
   <div class="technical-skills">
     <div class="tech-skill" *ngFor="let key of groupedSkillsKeys">
-      <p class="tech-skill__type">{{ key }}</p>
+      <h3 class="tech-skill__type">{{ key }}</h3>
       <div class="tech-skill__subtype-data" *ngFor="let subtypeData of groupedSkills[key]">
-        <p class="tech-skill__subtype">{{ subtypeData.subtype }}</p>
-        <p class="tech-skill__skill">{{ subtypeData.skills }}</p>
+        <h4 class="tech-skill__subtype">{{ subtypeData.subtype }}</h4>
+        <div class="skills-grid">
+          <span class="skill-tag" *ngFor="let skill of subtypeData.skills.split(', ')">{{ skill }}</span>
+        </div>
       </div>
     </div>
   </div>

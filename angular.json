@@ -52,7 +52,7 @@
               "sourceMap": true,
               "namedChunks": true,
               "outputHashing": "none",
-              "deployUrl": "http://localhost:4201/"
+              "deployUrl": "http://localhost:4301/"
             }
           },
           "defaultConfiguration": "production"

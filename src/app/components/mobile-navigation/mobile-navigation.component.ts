@@ -1,19 +1,14 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { assetUrl } from 'src/single-spa/asset-url';
 import { NavigationService, NavigationItem } from '../../services/navigation.service';
 import { Observable, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-navigation',
-  templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.scss']
+  selector: 'app-mobile-navigation',
+  templateUrl: './mobile-navigation.component.html',
+  styleUrls: ['./mobile-navigation.component.scss']
 })
-export class NavigationComponent implements OnInit, OnDestroy {
-  emailIconPath = assetUrl('/icons/email.svg');
-  linkedinIconPath = assetUrl('/icons/linkedin.svg');
-  githubIconPath = assetUrl('/icons/github.svg');
-
+export class MobileNavigationComponent implements OnInit, OnDestroy {
   navigationItems$: Observable<NavigationItem[]>;
   activeSection$: Observable<string>;
   private destroy$ = new Subject<void>();

@@ -1,30 +1,51 @@
 .landing-page-wrapper {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   position: relative;
+  background: var(--secondary-color);
+  
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
 }
 
 .landing-page {
   width: 100%;
-  height: 100%;
-  background: var(--secondary-color);
-  padding: 0 16px;
-  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-end;
   scroll-behavior: smooth;
+  
   &__content {
     width: 75%;
-    padding: 0 64px;
+    padding: 0 clamp(1rem, 4vw, 4rem);
+    margin-left: 25%;
   }
+  
   &__navigation {
     height: 100vh;
     width: 25%;
     position: fixed;
     left: 0;
-    border-right: 1px solid rgba(0,0,0,0.2);
+    top: 0;
+    background: var(--glass-bg);
+    backdrop-filter: var(--blur-md);
+    border-right: 1px solid var(--glass-border);
     z-index: 100;
   }
 }
@@ -32,34 +53,26 @@
 app-welcome-page,
 app-about-me,
 app-work-experience,
-app-technical-skill,
+app-technical-skills,
 app-my-projects-demo,
-app-contact-me { width: 100%;}
+app-contact-me {
+  width: 100%;
+  display: block;
+}
 
-@media screen and (max-width: 767px) {
+@media (max-width: 1024px) {
   .landing-page {
-    flex-direction: column;
     &__content {
       width: 100%;
+      margin-left: 0;
+      padding: 0 clamp(1rem, 3vw, 2rem);
+      padding-bottom: 6rem;
     }
+    
     &__navigation {
       display: none;
     }
   }
 }
 
-@media screen and (max-width: 600px) {
-  .landing-page {
-    &__content {
-      padding: 0 32px;
-    }
-  }
-}
 
-@media screen and (max-width: 400px) {
-  .landing-page {
-    &__content {
-      padding: 0 16px;
-    }
-  }
-}

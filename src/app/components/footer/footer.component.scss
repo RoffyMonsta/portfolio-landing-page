@@ -1,19 +1,28 @@
 .footer {
   width: 100%;
-  border-top: 1px solid var(--primary-color);
-  background-color: var(--secondary-matching-color-1);
-  color: #fff;
-  padding: 16px 0;
+  background: var(--glass-bg);
+  backdrop-filter: var(--blur-md);
+  border-top: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  padding: 2rem 0;
   text-align: center;
-  z-index: 200;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  margin-top: var(--big-gap);
 }
 
 .container {
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 var(--regular-gap);
+  
   p {
-    font-weight: normal;
+    font-weight: 400;
     font-size: var(--small-font-size);
+    margin: 0;
+    
+    &::before {
+      content: '❤️';
+      margin-right: 0.5rem;
+    }
   }
 }

@@ -1,10 +1,14 @@
 <section class="section welcome-page" appScrollSection="welcome">
   <div class="welcome-page__general-info">
     <app-typewriter-welcome></app-typewriter-welcome>
+    
     <div class="welcome-page__description">
-      <p>Hey there! I'm Anton Lomovatskyi, an accomplished Software Engineer with expertise in a diverse array of technologies, including Angular, NodeJS, React, Microfrontends, and Flutter with Dart. My journey in both front-end and back-end development has seen me contribute significantly to innovative projects, and I'm eager to take on new challenges with my expanded skill set. Let's connect and explore the exciting possibilities together!
-      </p>
-      <app-experience-calculator></app-experience-calculator>
+      <p>Hey there! I'm Anton Lomovatskyi, a passionate Software Engineer specializing in modern web and mobile development. I love building innovative solutions that make a real impact, from scalable web applications to cutting-edge mobile experiences.</p>
+      
+      <div class="welcome-page__cta">
+        <button (click)="scrollToSection('contact_me')" class="btn-primary">Get In Touch</button>
+        <button (click)="scrollToSection('projects_demo')" class="btn-secondary">View My Work</button>
+      </div>
     </div>
   </div>
 </section>
