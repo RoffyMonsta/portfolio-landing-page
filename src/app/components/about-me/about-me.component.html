@@ -1,58 +1,70 @@
-<section class="section about-me" appScrollSection="about_me">
-  <p class="section-title">About me</p>
+<section class="section" appScrollSection="about_me">
+  <h2 class="section-title">About Me</h2>
   <div class="about-me__content">
     <div class="about-me__left-section">
-      <!-- Location -->
       <div class="about-me__section">
-        <p class="about-me__title">Location</p>
+        <h3 class="about-me__title">Location</h3>
         <div class="about-me__description">
-          <img class="about-me__flag" [src]="ukrainianFlagAsset" alt="Location Flag" /><span> Chernivtsi, Ukraine</span>
+          <div class="location-info">
+            <img class="about-me__flag" [src]="ukrainianFlagAsset" alt="Ukraine Flag" />
+            <span> Chernivtsi, Ukraine</span>
+          </div>
         </div>
       </div>
-      <!-- Education -->
+      
       <div class="about-me__section">
-        <p class="about-me__title">Education</p>
+        <h3 class="about-me__title">Education</h3>
         <div class="about-me__description">
           <ul>
             <li>
-            <a target="_blank" href="https://lpnu.ua/en">Lviv Polytechnic National University</a><br />
-              01.09.2023 - 31.08.2027 PhD in Computer Science
+              <strong><a target="_blank" href="https://lpnu.ua/en">Lviv Polytechnic National University</a></strong><br>
+              <small>2023 - 2027 • PhD in Computer Science</small>
             </li>
             <li>
-              <a target="_blank" href="https://lpnu.ua/en">Lviv Polytechnic National University</a><br />
-              01.09.2021 - 30.06.2023 M.S. in Computer Science (93.91 GPA)
+              <strong><a target="_blank" href="https://lpnu.ua/en">Lviv Polytechnic National University</a></strong><br>
+              <small>2021 - 2023 • M.S. in Computer Science (93.91 GPA)</small>
             </li>
             <li>
-              <a target="_blank" href="https://lpnu.ua/en">Lviv Polytechnic National University</a><br />
-              01.09.2017 - 30.06.2021 B.S. in Computer Science (96.2 GPA)
+              <strong><a target="_blank" href="https://lpnu.ua/en">Lviv Polytechnic National University</a></strong><br>
+              <small>2017 - 2021 • B.S. in Computer Science (96.2 GPA)</small>
             </li>
           </ul>
         </div>
       </div>
     </div>
+    
     <div class="about-me__right-section">
-      <!-- Languages -->
       <div class="about-me__section">
-        <p class="about-me__title">Languages</p>
+        <h3 class="about-me__title">Languages</h3>
         <div class="about-me__description">
           <ul>
             <li>
-              <span class="about-me__li-content"><img class="about-me__flag" [src]="britainFlagAsset" alt="Location Flag" />English - C1 (<a target="_blank" href="/english.pdf">certified B2</a>)</span>
+              <div class="about-me__li-content">
+                <img class="about-me__flag" [src]="britainFlagAsset" alt="UK Flag" />
+                <span>English - C1 (<a target="_blank" href="/english.pdf">certified B2</a>)</span>
+              </div>
             </li>
             <li>
-              <span class="about-me__li-content"><img class="about-me__flag" [src]="ukrainianFlagAsset" alt="Location Flag" />Ukrainian - fluent</span>
+              <div class="about-me__li-content">
+                <img class="about-me__flag" [src]="ukrainianFlagAsset" alt="Ukraine Flag" />
+                <span>Ukrainian - Native</span>
+              </div>
             </li>
             <li>
-              <span class="about-me__li-content"><img class="about-me__flag" [src]="germanFlagAsset" alt="Location Flag" />German - A1</span>
+              <div class="about-me__li-content">
+                <img class="about-me__flag" [src]="germanFlagAsset" alt="Germany Flag" />
+                <span>German - A1</span>
+              </div>
             </li>
             <li>
-              <span class="about-me__li-content"><img class="about-me__flag" [src]="polishFlagAsset" alt="Location Flag" />Polish - A1</span>
+              <div class="about-me__li-content">
+                <img class="about-me__flag" [src]="polishFlagAsset" alt="Poland Flag" />
+                <span>Polish - A1</span>
+              </div>
             </li>
           </ul>
         </div>
       </div>
     </div>
-</div>
-
-
+  </div>
 </section>

@@ -24,7 +24,7 @@ export class ContactMeComponent {
       textValue: 'Write me',
       iconPath: assetUrl('/icons/email.svg'),
       link: 'mailto:anton.lomovatskyi@gmail.com?subject = Hey Anton!',
-      displayValue: 'anton.lomovatskyigmail.com'
+      displayValue: 'anton.lomovatskyi@gmail.com'
     },
     {
       textValue: 'Connect on',

@@ -1,27 +1,30 @@
-<div class="work-card">
-
+<article class="work-card">
   <div class="work-card__info">
-    <div class="work-card__header">
-      <p class="work-card__date">{{cardInfo.date}}</p>
+    <header class="work-card__header">
+      <div class="work-card__date">{{cardInfo.date}}</div>
       <div class="work-card__header-info">
-        <a [href]="cardInfo.companyLink" class="work-card__company" target="_blank">{{cardInfo.companyName}}</a>
+        <h3><a [href]="cardInfo.companyLink" class="work-card__company" target="_blank">{{cardInfo.companyName}}</a></h3>
         <div class="work-card__positions">
-          <p *ngFor="let position of cardInfo.positions" class="work-card__position">{{ position.positionDate }} - {{position.positionName}}</p>
+          <div *ngFor="let position of cardInfo.positions" class="work-card__position">
+            {{ position.positionDate }} - {{position.positionName}}
+          </div>
         </div>
       </div>
-    </div>
+    </header>
+    
     <div class="work-card__description" *ngFor="let project of cardInfo.projects">
-      <p class="work-card__project-info">
-        <span class="work-card__project-date">{{project.projectDate}} </span>
+      <div class="work-card__project-info">
+        <span class="work-card__project-date">{{project.projectDate}}</span>
         <a *ngIf="project.projectLink" class="work-card__project-name link" [href]="project.projectLink" target="_blank">{{project.projectName}}</a>
         <span *ngIf="!project.projectLink" class="work-card__project-name">{{project.projectName}}</span>
-      </p>
+      </div>
       <div class="work-card__project-description">
         {{ project.projectDescription}}
       </div>
     </div>
+    
     <div class="work-card__responsibilites-block">
-      <p class="work-card__responsibilites-title">My responsibilites: </p>
+      <h4 class="work-card__responsibilites-title">Key Responsibilities</h4>
       <div class="work-card__responsibilites">
         <ul>
           <li *ngFor="let responsibility of cardInfo.responsibilites">{{responsibility}}</li>
@@ -29,4 +32,4 @@
       </div>
     </div>
   </div>
-</div>
+</article>

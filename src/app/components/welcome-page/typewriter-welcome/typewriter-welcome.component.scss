@@ -1,6 +1,19 @@
 .typewriter-text {
-  color: var(--primary-color);
-  font-weight: bold;
-  font-size: var(--big-font-size);
-  min-height: 70px;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  
+  @media (max-width: 768px) {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
 }

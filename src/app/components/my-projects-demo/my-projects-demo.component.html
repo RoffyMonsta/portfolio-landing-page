@@ -1,23 +1,33 @@
 <section class="section my-projects" appScrollSection="projects_demo">
-  <p class="section-title">My projects and demo</p>
-  <p class="my-projects__description">This page is build using <a href="https://single-spa.js.org/" target="_blank">Single SPA</a> microfrontend utility so each JS project in this section is served under this base page's route. You can browse the <a href="https://github.com/RoffyMonsta/roffymonsta.github.io" target="_blank">root config repository code</a> as well as the <a href="https://github.com/RoffyMonsta/portfolio-landing-page" target="_blank">landing page repository code</a>.</p>
+  <h2 class="section-title">Projects & Demos</h2>
+  <p class="my-projects__description">
+    This portfolio showcases projects built with <a href="https://single-spa.js.org/" target="_blank">Single SPA</a> microfrontend architecture. 
+    Each project runs independently while being seamlessly integrated into this main application. 
+    Explore the <a href="https://github.com/RoffyMonsta/roffymonsta.github.io" target="_blank">root configuration</a> 
+    and <a href="https://github.com/RoffyMonsta/portfolio-landing-page" target="_blank">source code</a>.
+  </p>
+  
   <div class="my-projects__projects-container">
     <mat-expansion-panel *ngFor="let projectKey of groupedProjectsKeys">
-    <mat-expansion-panel-header [collapsedHeight]="'auto'" [expandedHeight]="'auto'">
-      <mat-panel-title>
-        <span class="my-projects__title"><img class="my-projects__icon" [src]="iconPath[projectKey]" alt="icon"> {{ projectKey }}</span>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-   <div class="my-projects__expansion-content" *ngFor="let project of groupedProjects[projectKey]; index as projectIndex ">
-    <div class="my-projects__project-info">
-      <span class="my-projects__project-name">{{project.name}}</span>
-      <span>
-        <a [href]="project.demoPath" target="_blank">Demo</a><span class="links-divider"> | </span>
-        <a [href]="project.codeURL" target="_blank">Code</a>
-      </span>
-    </div>
-    <mat-divider *ngIf="projectIndex !== (groupedProjects[projectKey].length-1)"></mat-divider>
-  </div>
-  </mat-expansion-panel>
+      <mat-expansion-panel-header [collapsedHeight]="'auto'" [expandedHeight]="'auto'">
+        <mat-panel-title>
+          <div class="my-projects__title">
+            <img class="my-projects__icon" [src]="iconPath[projectKey]" [alt]="projectKey + ' icon'">
+            {{ projectKey }}
+          </div>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      
+      <div class="my-projects__expansion-content" *ngFor="let project of groupedProjects[projectKey]; index as projectIndex">
+        <div class="my-projects__project-info">
+          <div class="my-projects__project-name">{{project.name}}</div>
+          <div class="my-projects__project-links">
+            <a [href]="project.codeURL" target="_blank" rel="noopener">View Code</a>
+            <a [href]="project.demoPath" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </div>
+        <mat-divider *ngIf="projectIndex !== (groupedProjects[projectKey].length-1)"></mat-divider>
+      </div>
+    </mat-expansion-panel>
   </div>
 </section>
