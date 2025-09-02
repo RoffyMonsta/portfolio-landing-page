@@ -38,6 +38,12 @@ export class MyProjectsDemoComponent implements OnInit {
       technology: eProjectTechnology.ANGULAR
     },
     {
+      name: 'UA Army Recruitment Website',
+      demoPath: 'https://www.fort92tro.com.ua/',
+      codeURL: 'https://github.com/RoffyMonsta/fort92tro',
+      technology: eProjectTechnology.REACT
+    },
+    {
       name: `Jojo's Bizzare Adventure Wiki-API`,
       demoPath: 'https://jojo-api.onrender.com/api/v1/characters',
       codeURL: 'https://github.com/RoffyMonsta/portfolio-jojo-backend-api',
