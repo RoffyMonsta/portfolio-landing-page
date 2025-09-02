@@ -22,13 +22,7 @@ export class PortfolioLandingPageComponent implements OnInit, AfterViewInit {
       PerformanceUtils.measurePerformance();
     }
 
-    // Preload critical resources
-    const criticalResources = [
-      assetUrl('/assets/icons/email.svg'),
-      assetUrl('/assets/icons/linkedin.svg'),
-      assetUrl('/assets/icons/github.svg'),
-    ];
-    PerformanceUtils.preloadResources(criticalResources);
+
   }
 
   ngAfterViewInit(): void {
