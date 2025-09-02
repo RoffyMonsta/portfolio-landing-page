@@ -44,6 +44,12 @@ export class MyProjectsDemoComponent implements OnInit {
       technology: eProjectTechnology.REACT
     },
     {
+      name: 'JoJo Stand Battle Game',
+      demoPath: 'https://roffymonsta.github.io/jojo-mini-game',
+      codeURL: 'https://github.com/RoffyMonsta/jojo-mini-game',
+      technology: eProjectTechnology.REACT
+    },
+    {
       name: `Jojo's Bizzare Adventure Wiki-API`,
       demoPath: 'https://jojo-api.onrender.com/api/v1/characters',
       codeURL: 'https://github.com/RoffyMonsta/portfolio-jojo-backend-api',
